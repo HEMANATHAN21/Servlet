@@ -1,0 +1,120 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.ServletOne</servlet-class>
+  <servlet-name>s1</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/login</url-pattern>
+  <servlet-name>s1</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.AddProd2Num</servlet-class>
+  <servlet-name>s2</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/cal</url-pattern>
+  <servlet-name>s2</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.Servlet3</servlet-class>
+  <servlet-name>s3</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/d1</url-pattern>
+  <servlet-name>s3</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.Servlet4</servlet-class>
+  <servlet-name>s4</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/d2</url-pattern>
+  <servlet-name>s4</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.Servlet5SetAttribute</servlet-class>
+  <servlet-name>s5</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/setGetAttribute1</url-pattern>
+  <servlet-name>s5</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.Servlet6GetAttribute</servlet-class>
+  <servlet-name>s6</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/setGetAttribute2</url-pattern>
+  <servlet-name>s6</servlet-name>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>db_name</param-name>
+  <param-value>Employee</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.ServletContext1</servlet-class>
+  <servlet-name>sc1</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/url1</url-pattern>
+  <servlet-name>sc1</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.ServletContext2</servlet-class>
+  <servlet-name>sc2</servlet-name>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/url2</url-pattern>
+  <servlet-name>sc2</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.InitParamservConfDb</servlet-class>
+  <servlet-name>ipscdb</servlet-name>
+  <init-param>
+  <param-name>db_name</param-name>
+  <param-value>sys</param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/db</url-pattern>
+  <servlet-name>ipscdb</servlet-name>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-class>servlet.servlet.InitParamSerConfEmp</servlet-class>
+  <servlet-name>ipscemp</servlet-name>
+  <init-param>
+  <param-name>emp_name</param-name>
+  <param-value>Hema</param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <url-pattern>/emp</url-pattern>
+  <servlet-name>ipscemp</servlet-name>
+  </servlet-mapping>
+</web-app>

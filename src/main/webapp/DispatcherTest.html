@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet Project</title>
+<style>
+	body{
+		background-color: black;
+	}
+	#form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 45vh;
+		background-color: white;
+		width: 400px;
+		margin-left: 35vw;
+		border-radius: 10px;
+	}
+	#btn{
+		padding-left: 5	px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		border-color: white;
+	}
+	
+	#btn:hover{
+		padding-left: 25px;
+		padding-right: 25px;
+		background-color: black;
+		color: white;
+		transition: 1s;
+	}
+	
+</style>
+</head>
+<body>
+		
+		<form id="form" action="d1">
+		    <label id = "username">Enter USername</label>	
+		    <input type="text" name="uname" placeholder="Enter UserName" ><br>
+			<label id = "email">Enter Email</label>
+			<input type="text" name="uemail" placeholder="Enter Email" ><br>
+			<input id="btn" type="submit">
+		</form>
+	
+</body>
+</html>
